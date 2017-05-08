@@ -30,10 +30,10 @@ if [ "$OAUTH_ADDITIONAL_PARAMS" != "**None**" ]; then
 fi
 
 if [[ -f $SWAGGER_JSON ]]; then
-  sed -i "s|http://petstore.swagger.io/v2/swagger.json|swagger.json|g" $INDEX_FILE
+  sed -i "s|https://raw.githubusercontent.com/bedita/bedita/feature/v4/swagger-ui-bearer-authorization/plugins/BEdita/API/spec/be4.yaml|swagger.json|g" $INDEX_FILE
   sed -i "s|http://example.com/api|swagger.json|g" $INDEX_FILE
 else
-  sed -i "s|http://petstore.swagger.io/v2/swagger.json|$API_URL|g" $INDEX_FILE
+  sed -i "s|https://raw.githubusercontent.com/bedita/bedita/feature/v4/swagger-ui-bearer-authorization/plugins/BEdita/API/spec/be4.yaml|$API_URL|g" $INDEX_FILE
   sed -i "s|http://example.com/api|$API_URL|g" $INDEX_FILE
 fi
 
