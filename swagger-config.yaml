@@ -1,5 +1,5 @@
 ---
-url: "http://petstore.swagger.io/v2/swagger.json"
+url: "https://raw.githubusercontent.com/bedita/bedita/4-cactus/plugins/BEdita/API/spec/be4.yaml"
 dom_id: "#swagger-ui"
 validatorUrl: "https://online.swagger.io/validator"
-oauth2RedirectUrl: "http://localhost:3200/oauth2-redirect.html"
+oauth2RedirectUrl: null
